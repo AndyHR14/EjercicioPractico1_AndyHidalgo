@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns="http://www.w3.org/1999/xhtml">
+    <head th:replace="~{layout/plantilla :: head}">
+        <title>CasoPractico</title>        
+    </head>
+    <body>
+        
+        <header th:replace="~{layout/plantilla :: header}"/>
+        <nav th:replace="~{layout/plantilla :: nav}"/>
+        <div class="container">
+              <h1>Formulario de Quejas</h1>
+    <form action="/procesar-queja" method="POST">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br><br>
+
+        <label for="descripcion">Descripción:</label><br>
+        <textarea id="descripcion" name="descripcion" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="queja">Queja:</label><br>
+        <textarea id="queja" name="queja" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Enviar Queja">
+    </form>
+        </div>
+        <footer th:replace="~{layout/plantilla :: footer}"/>   
+        
+    </body>
+</html>

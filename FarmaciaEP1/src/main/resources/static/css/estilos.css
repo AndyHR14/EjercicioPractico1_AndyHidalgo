@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0; /* Asegúrate de que no haya relleno */
+}
+.btn-custom {
+    font-size: 44px; /* Aumenta el tamaño de la fuente */
+    padding: 25px 45px; /* Aumenta el relleno (tamaño) del botón */
+    border-radius: 10px; /* Opcional: redondea los bordes */
+}
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Cambia de center a flex-start */
+    text-align: center;
+    margin-bottom: 10px; /* Reduce este margen */
+}
+/* Asegura que el botón hamburguesa esté a la izquierda */
+.navbar-toggler {
+    margin-right: auto !important;
+    margin-left: 0 !important;
+    order: 0 !important; /* Menor número = más a la izquierda */
+}
+
+/* Asegura que el brand/logo esté a la derecha o después del botón */
+.navbar-brand {
+    margin-left: auto !important;
+    order: 1 !important;
+}
+
+/* Configuración para el menú desplegable */
+@media (max-width: 991.98px) {
+    .container-fluid {
+        position: relative !important;
+    }
+    
+    .navbar-collapse {
+        position: absolute !important;
+        top: 100% !important;
+        left: 0 !important;
+        width: 250px !important;
+        background-color: white !important;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
+        z-index: 1030 !important;
+    }
+    
+    .navbar-toggler {
+        position: relative !important;
+        z-index: 1031 !important;
+    }
+}
+/* Estilos para el contenedor de la página */
+html, body {
+    height: 100%; /* Asegura que el cuerpo y el html ocupen toda la altura de la pantalla */
+    margin: 0; /* Elimina márgenes predeterminados */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    margin-bottom: 0; /* Elimina el margen inferior del contenedor */
+    padding-bottom: 0; /* Elimina el relleno inferior */
+    height: auto; /* Asegúrate de que la altura sea automática */
+}
+
+/* Contenedor del iframe */
+.iframe-container {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    width: 65%; /* Puedes ajustar el ancho del iframe */
+    max-width: 650px; /* Limita el ancho máximo */
+    margin-bottom: 20 px;
+}
+/* Posiciona el menú desplegable a la izquierda */
+#navbarNav {
+    justify-content: flex-start;
+}
+
+.navbar-nav {
+    margin-right: auto;
+    margin-left: 0;
+}
+.header {
+    height: 100px;
+    background-color: #89DCAD;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    font-size: 3rem;
+}
+.footer {
+    height: 80px;
+    background-color: #598F70;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    margin-top: auto;
+    font-size: 15px;
+}
+
+.lorem-ipsum {
+    font-size: 30px;
+    margin-bottom: 30px; /* Reduce de 75px a 30px */
+    max-width: 1200px;
+    padding: 0 20px;
+}
+table {
+    table-layout: fixed;
+}
+
+.col-nro {
+    width: 50px;
+}
+
+.col-nombre {
+    width: 150px;
+}
+
+.col-descripcion {
+    width: 300px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.col-precio {
+    width: 80px;
+}
+
+.col-stock {
+    width: 80px;
+}
+
+.col-acciones {
+    width: 150px;
+}
